@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "production": "webpack -p",
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server --history-api-fallback"
   },
   "author": "Montri Wiwatsakunwet",
   "license": "ISC",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-dom": "^15.5.4",
+    "react-router": "^3.0.2"
   }
 }
