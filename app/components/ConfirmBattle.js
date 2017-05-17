@@ -6,9 +6,10 @@ var Link = ReactRouter.Link;
 var UserDetails = require('./UserDetails');
 var UserDetailsWrapper = require('./UserDetailsWrapper');
 var MainContainer = require('../containers/MainContainer');
+var Loading = require('./Loading');
 
 function ConfirmBattle(props) {
-    return props.isLoading === true ? <p>LOADING</p> :
+    return props.isLoading === true ? <Loading /> :
         <MainContainer>
             <h1>Confirm Players</h1>
             <div className='col-sm-8 col-sm-offset-2'>
